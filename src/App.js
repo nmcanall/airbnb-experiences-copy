@@ -1,9 +1,14 @@
-import './App.css';
+import './styles/App.css';
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import CardLine from "./components/CardLine";
 
 function App() {
   return (
     <div className="App">
-      <h1>My App</h1>
+      <Navbar/>
+      <Hero/>
+      <CardLine/>
     </div>
   );
 }
