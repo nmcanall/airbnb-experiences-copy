@@ -43,16 +43,27 @@ nav {
 /* Card design */
 .card-line {
   display: flex;
-  padding-inline: 25px;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 235px;
+  flex: 0 0 auto;
+  /* height: 235px; */
   width: 176px;
   padding: 8px;
   font-size: 12px;
+}
+
+.badge {
+  position: absolute;
+  background: white;
+  padding: 2px 8px;
+  margin: 8px 10px;
+  border-radius: 3px;
 }
 
 .card-img {
